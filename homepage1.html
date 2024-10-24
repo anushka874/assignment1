@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage1</title>
+    <style>
+   
+        .myNav{
+            background-color:skyblue;
+            overflow: hidden;
+            height: 90px;
+            width: 1920px;
+            display: flex;
+        }
+        .login{
+            background-color: green;
+            height: 50px;
+            width: 30%;
+            color: white;
+        }
+        .register{
+            background-color: white;
+            height: 50px;
+            width: 30%;
+            border: 1px solid red;
+            color: red;
+
+
+        }
+        .c1{
+            display: flex;
+            gap: 10px;
+            padding: 15px 0 0 300px;
+            text-decoration: none;
+           
+            align-items: center;
+        }
+        a{
+            width: 300px;
+            text-decoration: none;
+
+        }
+        p{
+            font-size: 30px ;
+            padding-left: 100px;
+            color: #128C76;
+        }
+        img{
+            width:1920px;
+            height: 780px;
+            background-color:  #11337580;
+            
+        }
+      .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 770px;
+       
+       }
+       h1{
+        font-family: sans-serif;
+        font-weight: 700;
+        size: 60px;
+        line-height: 80px;
+
+       }
+       .shape{
+        width: 450px;
+        height: 450px;
+        
+        top: 250px;
+        left: 420px;
+        border-radius: 50%;
+        background-color: #336EE1;
+        position: absolute;
+        opacity: 0.6;
+        
+
+       }
+       .button{
+        height: 70px;
+        width: 250px;
+        background-color: #128C76;
+        color: white;
+
+       }
+       .text2{
+       
+        width: 25%;
+        margin: auto;
+        line-height: 5px;
+        top: 1030px;
+        left: 575px;
+       }
+       .t2{
+        color: #999999;
+        line-height: 20px;
+       }
+       .grid-container{
+        
+        width: 70%;
+        /* height: 700px; */
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: space-evenly;
+        margin:auto; 
+       
+    
+       }
+       .grid-item{
+        
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+
+       }
+       .grid-item img{
+        width:100%;
+        height:250px;
+
+       }
+       .family{
+        background-color:white;
+        color: #333333;
+        height:30px;
+       }
+       .grbtn{
+        position:relative;
+        left:10px;
+        bottom: 235px;
+        
+
+       }
+       .pinkbtn{
+        width: 100%;
+        height: 70px;
+        background-color: #F56B8D;
+        margin-top:auto;
+        color: white;
+        
+       }
+       h5{
+        color: grey;
+        font-weight: 400;
+       }
+       h4{
+        color: black;
+
+       }
+       
+       #file{
+        width: 80%;
+        height: 15px;
+
+
+       }
+       .fund{
+        font-weight: 400;
+        size: 16px;
+        line-height:24px;
+       }
+       .divider{
+        border-bottom: 1px solid #888989;
+        margin: 3px 0;
+       }
+       .security{
+        width: 100px;
+        height: 210px;
+       }
+       .probtn{
+        height: 100px;
+        width:200px;
+        border: 2px solid #e50b36;
+        margin: auto;
+        
+       }
+       .project{
+        height:70px;
+        width:270px;
+        border: 1px solid #F56B8D;
+        color: #F56B8D;
+        align-items: center; 
+        }
+
+       .graphpage{
+        width:1920px;
+      
+        /* height:696px; */
+        display: flex;
+        background-color: #ECF4FD;
+        
+       }
+       .content{
+        width:1920px;
+        height: 781.38px;
+        display: flex;
+        align-items: center;
+        padding-left: 200px;
+        
+       }
+       .cuate img{
+        width: 470px;
+        height: 461.38px;
+        left: 1075px;
+       }
+       .text5{
+        color:grey;
+       }
+       .mask img{
+        width: 306px;
+        height: 301px;
+        position: relative;
+        Top: 30px;
+        left: 100px;
+       }
+       .footer{
+        width: 1920px;
+        height: 484px;
+        background-color: #ECECEC;
+        display: flex;
+        justify-content: space-evenly;
+        
+       }
+       .part1,.part2 ,.part3{
+       
+        width: 370px;
+        padding-left: 10px;
+        text-align: center;
+
+       }
+       .part1{
+        display: flex;
+        flex-direction: column;
+       }
+       .fbtn{
+        height: 50px;
+        width: 50px;
+        background-color: #F56B8D;
+        color: whitesmoke;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+       }
+       .part1b{
+        display: flex;
+       }
+    
+       
+
+       
+    
+    </style>
+</head>
+<body>
+  <div id="container">
+    <nav class="myNav">
+        <p>NEXT INVEST</p>
+     <div class="c1">   
+        <a href="#about">Investment Opportunities</a>
+        <a href="#services">How it works</a>
+        <a href="#contact">About Us</a>
+        <button class="login">LOGIN</button>
+        <button class="register">REGISTER</button>
+    </div>  
+    </nav>
+    <div class="image-container">
+        <img src="img.jpg" alt="text image">
+        <div class="shape"></div>
+        <div class="text">
+            <h1>Meaningful Investments in<br> Main Street business.</h1>
+            <h3>Browse vetted investment offerings in communities all over the US.</h3>
+            <button class="button">GET STARTED</button>
+        </div>
+    </div>
+    <div class="text2">
+        <h1 class="t1">Offerings open for investment</h1>
+        <h4 class="t2">Explore pre-vetted investment opportunities available in a growing number of industry categories.</h4>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="img1.jpg"/>
+            <div class="grbtn">
+                <button class="family">FAMILY</button>
+                <button class="family">FAMILY BUSINESS</button>
+            </div>
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+            
+        </div>
+        <div class="grid-item">
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+            <div class="divider"></div>
+            <!-- <div class="security"> -->
+                
+
+            <!-- </div> -->
+            <button class="pinkbtn">VIEW</button>
+        </div>
+        <div class="grid-item">
+            <img src="img2.jpg"/>
+            <div class="grbtn">
+                <button class="family">FAMILY</button>
+                <button class="family">FAMILY BUSINESS</button>
+            </div>
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img3.jpg"/>
+            <div class="grbtn">
+                <button class="family">FAMILY</button>
+                <button class="family">FAMILY BUSINESS</button>
+            </div>
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img4.jpg"/>
+            <div class="grbtn">
+                <button class="family">FAMILY</button>
+                <button class="family">FAMILY BUSINESS</button>
+            </div>
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img5.jpg"/>
+            <div class="grbtn">
+                <button class="family">FAMILY</button>
+                <button class="family">FAMILY BUSINESS</button>
+            </div>
+            <div class="t3">
+                <h2>Oxalis</h2>
+                <h5>Brooklyn, NY</h5>
+            </div>
+            <div class="t4">
+                <h4 >A recognized leader in language immersion & early education, opening second school.</h4>
+            </div>
+            <div>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
+            </div>
+        </div>
+        
+        
+       
+       
+    </div>
+  </div>
+    <center>
+        <button class="project">VIEW ALL PROJECT</button>
+    </center>
+    <div class="graphpage">
+        <img src="Graph.png">
+    </div>
+    <div class="content">
+        <div class="cont">
+            <h2>Looking to raise capital
+                for your growing business?</h2>
+              <h6 class="text5">Whether expanding or opening a brand-new concept, we make it easy to raise money from thousands of local investors.</h6>
+                <button class="button">APPLY ONLINE</button>
+
+        </div>
+        <div class="cuate">
+            <img src="cuate.png"/>
+
+        </div>
+        <div class="mask">
+            <img src="shape.png"/>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="part1">
+            <div class="part1a">
+            <h1 class="invest">NEXT INVEST</h1>
+            <h6>Copyright © 2020. LogoIpsum. All rights reserved.</h6>
+        </div>
+        <div class="part1b">
+            <label>Subscribe to our newsletter</label>
+            <input class="email" placeholder="Email Address">
+            <button class="fbtn" type="submit">></button>
+        </div>
+        </div>
+        <div class="part2">
+            <h4>Service</h4>
+            
+            
+
+        </div>
+        <div class="part3">
+            <h4>About</h4>
+
+        </div>
+        
+    </div>
+   
+    
+</body>
+</html>
