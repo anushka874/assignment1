@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage1</title>
+    <title>Homepage2</title>
     <style>
    
         .myNav{
-            background-color:skyblue;
+            background-color: skyblue;
+            
             overflow: hidden;
             height: 90px;
             width: 1920px;
             display: flex;
         }
         .login{
-            background-color: green;
+            background-color: #7B61FF;
+            
             height: 50px;
             width: 30%;
             color: white;
@@ -23,8 +25,10 @@
             background-color: white;
             height: 50px;
             width: 30%;
-            border: 1px solid red;
-            color: red;
+            border: 1px solid #7B61FF;
+            
+            color: #7B61FF;
+            ;
 
 
         }
@@ -33,18 +37,19 @@
             gap: 10px;
             padding: 15px 0 0 300px;
             text-decoration: none;
-           
+            color: white;
             align-items: center;
         }
-        a{
+        .anchor{
             width: 300px;
             text-decoration: none;
+            color: white;
 
         }
         p{
             font-size: 30px ;
             padding-left: 100px;
-            color: #128C76;
+            color: white;
         }
         img{
             width:1920px;
@@ -84,7 +89,8 @@
        .button{
         height: 70px;
         width: 250px;
-        background-color: #128C76;
+        background-color: #7B61FF;
+        
         color: white;
 
        }
@@ -138,7 +144,8 @@
        .pinkbtn{
         width: 100%;
         height: 70px;
-        background-color: #F56B8D;
+        background-color: #336EE1;
+        
         margin-top:auto;
         color: white;
         
@@ -181,8 +188,9 @@
        .project{
         height:70px;
         width:270px;
-        border: 1px solid #F56B8D;
-        color: #F56B8D;
+        border: 2px solid  #7B61FF;
+
+        color:#7B61FF;
         align-items: center; 
         }
 
@@ -223,6 +231,8 @@
         background-color: #ECECEC;
         display: flex;
         justify-content: space-evenly;
+       
+        
         
        }
        .part1,.part2 ,.part3{
@@ -235,11 +245,13 @@
        .part1{
         display: flex;
         flex-direction: column;
+        gap: 100px;
        }
        .fbtn{
         height: 50px;
         width: 50px;
-        background-color: #F56B8D;
+        background-color: #336EE1;
+        
         color: whitesmoke;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -247,7 +259,17 @@
        .part1b{
         display: flex;
        }
-    
+       .part2, .part3{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+       }
+       .anchor1{
+        color: black;
+        text-decoration: none;
+        
+       }
        
 
        
@@ -259,15 +281,15 @@
     <nav class="myNav">
         <p>NEXT INVEST</p>
      <div class="c1">   
-        <a href="#about">Investment Opportunities</a>
-        <a href="#services">How it works</a>
-        <a href="#contact">About Us</a>
+        <a href="#about" class="anchor">Investment Opportunities</a>
+        <a href="#services" class="anchor">How it works</a>
+        <a href="#contact" class="anchor">About Us</a>
         <button class="login">LOGIN</button>
         <button class="register">REGISTER</button>
     </div>  
     </nav>
     <div class="image-container">
-        <img src="img.jpg" alt="text image">
+        <img src="Image1.png" alt="text image">
         <div class="shape"></div>
         <div class="text">
             <h1>Meaningful Investments in<br> Main Street business.</h1>
@@ -312,10 +334,10 @@
             <div class="fund"><span style="color: #128C76,">$574,920 </span>raised of $1,000,000</div>
             </div>
             <div class="divider"></div>
-            <div class="security"> 
+            <!-- <div class="security"> -->
                 
 
-            </div> 
+            <!-- </div> -->
             <button class="pinkbtn">VIEW</button>
         </div>
         <div class="grid-item">
@@ -400,7 +422,7 @@
         <button class="project">VIEW ALL PROJECT</button>
     </center>
     <div class="graphpage">
-        <img src="Graph.png">
+        <img src="Graph2.png">
     </div>
     <div class="content">
         <div class="cont">
@@ -431,19 +453,24 @@
             <input class="email" placeholder="Email Address">
             <button class="fbtn" type="submit">></button>
         </div>
-    </div>
-        <div class="part2">
-            <h4>Service</h4>
-            
-            
+       </div>
+       <div class="part2">
+        <h4>Service</h4> 
+        <a href="#" class="anchor1">Email Marketing</a>
+        <a href="#" class="anchor1">Branding</a>
+        <a href="#" class="anchor1">offline</a>
+        <a href="#" class="anchor1">Campaigns</a>
 
-        </div>
-        <div class="part3">
-            <h4>About</h4>
-
-        </div>
-        
     </div>
+    <div class="part3">
+        <h4>About</h4>
+        <a href="#" class="anchor1">Our Story</a>
+        <a href="#" class="anchor1">Benefits</a>
+        <a href="#" class="anchor1">Team</a>
+        <a href="#" class="anchor1">Career</a>
+
+    </div>
+    </div> 
    
     
 </body>
